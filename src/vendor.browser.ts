@@ -21,6 +21,9 @@ import '@angularclass/hmr';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/mergeMap';
 
+//jQuery
+import 'jQuery';
+
 if ('production' === ENV) {
   // Production
 

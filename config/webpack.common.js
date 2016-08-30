@@ -18,7 +18,7 @@ const HtmlElementsPlugin = require('./html-elements-plugin');
  * Webpack Constants
  */
 const METADATA = {
-  title: 'Angular2 Webpack Starter by @gdi2290 from @AngularClass',
+  title: 'DaaS Projects',
   baseUrl: '/',
   isDevServer: helpers.isWebpackDevServer()
 };
@@ -171,11 +171,28 @@ module.exports = {
       {
         test: /\.(jpg|png|gif)$/,
         loader: 'file'
-      }
+      },
+      /* scss/sass loader */
+      {
+        test: /\.scss$/,
+        exclude: /node_modules/,
+        loaders: ['raw-loader', 'sass-loader'] // sass-loader not scss-loader
+      },
+      /* don't include multiple jquery bundles */
+      {
+        test: /jquery\.js/,
+        loader: 'null-loader',
+        /*exclude: path.resolve('node_modules/foundation-sites/') */
+      },
+      // **IMPORTANT** This is needed so that each foundation js file required by
+      // foundation-webpack has access to the jQuery object
+      { test: /foundation\/js\//, loader: 'imports?jQuery=jquery' }
     ]
 
   },
-
+   sassLoader: {
+    includePaths: ['./src/app/scss']
+  },
   /*
    * Add additional plugins to the compiler.
    *
