@@ -1,0 +1,173 @@
+/*************************************** FONTS AND TYPE ***************************************/
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("../fonts/SourceSansPro-Regular.woff2") format("woff2"), url("../fonts/SourceSansPro-Regular.woff") format("woff"), url("../fonts/SourceSansPro-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Source Sans Pro Semi Bold';
+  src: url("../fonts/SourceSansPro-Semibold.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Source Sans Pro Light';
+  src: url("../fonts/SourceSansPro-Light.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Source Sans Pro Bold';
+  src: url("../fonts/SourceSansPro-Bold.woff2") format("woff2"), url("../fonts/SourceSansPro-Bold.woff") format("woff"), url("../fonts/SourceSansPro-Bold.ttf") format("truetype"); }
+*, body, div, a, span, p, ul, li, strong {
+  font-family: "Source Sans Pro", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+h1 {
+  font-family: "Source Sans Pro Light", sans-serif; }
+
+h2, h3, h4, h5, h6 {
+  font-family: "Source Sans Pro", sans-serif; }
+
+.button, button {
+  font-family: "Source Sans Pro Bold", sans-serif; }
+
+/******************************************** COLORS ********************************************/
+/*************************************** DEFAULT TEXT STYLES ***************************************/
+.page-title-container {
+  background-color: #0a2c45;
+  width: 100%;
+  display: block;
+  padding: 1.5rem;
+  margin: 0 0 3.75rem; }
+  .page-title-container .page-title {
+    font-size: 2.25rem;
+    color: #ffffff; }
+
+.section-title {
+  font-size: 1.5rem;
+  color: #334a6b;
+  margin: 0 0 1.5625rem; }
+
+.page-intro {
+  font-size: 1.125rem;
+  color: #333333; }
+
+/*************************************** DEFAULT BUTTON, NAV AND ANCHOR STYLES ***************************************/
+.nav-container {
+  background-color: #0a1e37;
+  width: 100%;
+  height: 5.3125rem; }
+  .nav-container .main-nav {
+    background: transparent;
+    padding-top: 1.875rem; }
+    .nav-container .main-nav ul {
+      list-style: none;
+      list-style-type: none;
+      background: transparent;
+      padding: 0;
+      margin: 0; }
+    .nav-container .main-nav li {
+      float: left;
+      display: inline-block; }
+      .nav-container .main-nav li a {
+        color: #ffffff;
+        font-size: 1.125rem;
+        text-transform: uppercase;
+        display: block;
+        padding: 0 0.8125rem; }
+      .nav-container .main-nav li button {
+        float: left;
+        margin-top: -0.625rem; }
+
+.button, button {
+  text-transform: uppercase;
+  background-color: #288e50;
+  border-radius: 0.1875rem;
+  font-size: 1rem; }
+  .button:hover, .button:active, .button:focus, button:hover, button:active, button:focus {
+    background-color: #195731; }
+  .button.ghost-button, button.ghost-button {
+    background-color: transparent;
+    color: #666666; }
+    .button.ghost-button:hover, .button.ghost-button:active, .button.ghost-button:focus, button.ghost-button:hover, button.ghost-button:active, button.ghost-button:focus {
+      background-color: transparent;
+      color: #333333; }
+
+/*VISUAL FOCUS INDICATOR FOR ACCESSIBILITY PURPOSES*/
+a:focus, button:focus {
+  outline: 0.125rem solid #00CCCC; }
+
+/************************ GLOBAL *******************************/
+/*************************************** DEMO STYLES ***************************************/
+.page-container {
+  margin: 0;
+  padding: 0; }
+  .page-container .section {
+    margin: 1.875rem 0; }
+  .page-container .code-snippet {
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+    color: #008080;
+    font-size: 0.875rem;
+    border: 0.0625rem solid #E5E5E5;
+    margin-bottom: 1.875rem;
+    background-color: #f9f9f9;
+    border: 0.0625rem solid #E5E5E5;
+    padding: 1.25rem; }
+    .page-container .code-snippet.h1 {
+      margin-top: -1.875rem; }
+    .page-container .code-snippet .code-text {
+      color: #333333; }
+    .page-container .code-snippet .attribute {
+      color: #d14; }
+    .page-container .code-snippet .comment {
+      font-size: 0.75rem;
+      color: #666666;
+      font-style: italic;
+      text-transform: uppercase; }
+  .page-container .color-box {
+    background-color: #192A44;
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 0.1875rem;
+    color: #ffffff;
+    float: left;
+    margin: 0.625rem;
+    text-align: center;
+    display: block;
+    font-size: 0.75rem;
+    padding-top: 2.1875rem;
+    font-family: "Source Sans Pro Bold", sans-serif; }
+    .page-container .color-box.nav-blue {
+      background-color: #0a1e37; }
+    .page-container .color-box.dark-blue {
+      background-color: #192A44; }
+    .page-container .color-box.bg-blue {
+      background-color: #0a2c45; }
+    .page-container .color-box.medium-blue {
+      background-color: #334a6b; }
+    .page-container .color-box.light-blue {
+      background-color: #00709A; }
+    .page-container .color-box.dash-green {
+      background-color: #288e50; }
+    .page-container .color-box.dark-green {
+      background-color: #195731; }
+    .page-container .color-box.dash-red {
+      background-color: #98452e; }
+    .page-container .color-box.dash-yellow {
+      background-color: #BFAF26; }
+    .page-container .color-box.dark-gray {
+      background-color: #333333; }
+    .page-container .color-box.accent-gray {
+      background-color: #E5E5E5;
+      color: #333333; }
+    .page-container .color-box.pale-gray {
+      background-color: #f9f9f9;
+      border: 0.0625rem solid #E5E5E5;
+      color: #333333; }
+    .page-container .color-box.white {
+      background-color: #ffffff;
+      border: 0.0625rem solid #E5E5E5;
+      color: #333333; }
+    .page-container .color-box.text-color-inv {
+      background-color: #ffffff;
+      border: 0.0625rem solid #E5E5E5;
+      color: #333333; }
+    .page-container .color-box.text-color {
+      background-color: #666666; }
+    .page-container .color-box.focus-color {
+      background-color: #00CCCC; }

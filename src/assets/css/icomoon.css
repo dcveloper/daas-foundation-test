@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'dash-pictorials';
+  src: url("../fonts/dash-pictorials.eot?s8cruq");
+  src: url("../fonts/dash-pictorials.eot?s8cruq#iefix") format("embedded-opentype"), url("../fonts/dash-pictorials.ttf?s8cruq") format("truetype"), url("../fonts/dash-pictorials.woff?s8cruq") format("woff"), url("../fonts/dash-pictorials.svg?s8cruq#dash-pictorials") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'dash-pictorials' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-close-icon:before {
+  content: "\e900"; }
+
+.icon-cyber-icon:before {
+  content: "\e901"; }
+
+.icon-down-arrow-icon:before {
+  content: "\e902"; }
+
+.icon-dropdown-arrow-icon:before {
+  content: "\e903"; }
+
+.icon-governance-icon:before {
+  content: "\e904"; }
+
+.icon-grid-icon:before {
+  content: "\e905"; }
+
+.icon-keyword-icon:before {
+  content: "\e906"; }
+
+.icon-list-icon:before {
+  content: "\e907"; }
+
+.icon-menu-icon:before {
+  content: "\e908"; }
+
+.icon-organization-icon:before {
+  content: "\e909"; }
+
+.icon-search-alt-icon:before {
+  content: "\e90a"; }
+
+.icon-search-icon:before {
+  content: "\e90b"; }
+
+.icon-star-filled-icon:before {
+  content: "\e90c"; }
+
+.icon-star-outline-icon:before {
+  content: "\e90d"; }
+
+.icon-sustainability-icon:before {
+  content: "\e90e"; }
+
+.icon-topic-icon:before {
+  content: "\e90f"; }
+
+.icon-up-arrow-icon:before {
+  content: "\e910"; }
+
+.icon-user-icn:before {
+  content: "\e911"; }
+
+.icon-warning-icon:before {
+  content: "\e912"; }
+
+.icon-workforce-icon:before {
+  content: "\e913"; }
