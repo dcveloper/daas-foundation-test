@@ -18,6 +18,8 @@ import { Home } from './home';
 import { About } from './about';
 import { NoContent } from './no-content';
 
+import { Navbar } from './navbar';
+
 // Application wide providers
 const APP_PROVIDERS = [
   ...APP_RESOLVER_PROVIDERS,
@@ -33,7 +35,8 @@ const APP_PROVIDERS = [
     App,
     About,
     Home,
-    NoContent
+    NoContent,
+    Navbar
   ],
   imports: [ // import Angular's modules
     BrowserModule,

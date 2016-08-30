@@ -1,9 +1,12 @@
 /*
  * Angular 2 decorators and services
  */
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation,  ViewContainerRef } from '@angular/core';
 
-import { AppState } from './app.service';
+import {MODAL_DIRECTIVES, BS_VIEW_PROVIDERS} from 'ng2-bootstrap/ng2-bootstrap';
+
+
+import * from './asset/js/init';
 
 /*
  * App Component
@@ -11,25 +14,26 @@ import { AppState } from './app.service';
  */
 @Component({
   selector: 'app',
+   directives: [MODAL_DIRECTIVES],
+  viewProviders:[BS_VIEW_PROVIDERS],
   encapsulation: ViewEncapsulation.None,
   styleUrls: [
-    './app.style.scss',
-    './scss/app.scss',
-    './scss/demo.scss',
-    './scss/master.scss',
-    './scss/icomoon.scss',
+    './app.style.css'   
   ],  
   templateUrl: './app.template.html'
 })
-export class App {
- 
+export class App   {
+  now: "Hello World!";
   name = 'Home Page';
  
-  constructor() {
+  constructor(public viewContainerRef:ViewContainerRef) {
+    viewContainerRef = viewContainerRef;
   }
 
-  ngOnInit() {
-   
+  ngOnInit() {  
+
   }
+
+ 
 
 }

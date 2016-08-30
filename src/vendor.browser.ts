@@ -22,7 +22,8 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/mergeMap';
 
 //jQuery
-import 'jQuery';
+
+import 'jquery';
 
 if ('production' === ENV) {
   // Production
