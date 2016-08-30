@@ -3,10 +3,9 @@
  */
 import { Component, ViewEncapsulation,  ViewContainerRef } from '@angular/core';
 
-import {MODAL_DIRECTIVES, BS_VIEW_PROVIDERS} from 'ng2-bootstrap/ng2-bootstrap';
 
 
-import * from './asset/js/init';
+
 
 /*
  * App Component
@@ -14,8 +13,6 @@ import * from './asset/js/init';
  */
 @Component({
   selector: 'app',
-   directives: [MODAL_DIRECTIVES],
-  viewProviders:[BS_VIEW_PROVIDERS],
   encapsulation: ViewEncapsulation.None,
   styleUrls: [
     './app.style.css'   
